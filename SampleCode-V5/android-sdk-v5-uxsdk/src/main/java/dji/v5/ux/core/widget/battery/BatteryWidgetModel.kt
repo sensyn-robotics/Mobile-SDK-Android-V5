@@ -104,8 +104,8 @@ class BatteryWidgetModel(
         if (productConnectionProcessor.value) {
             when (batteryConnectedProcessor.value) {
                 DUAL_BATTERY -> {
-                    val battery1Voltage = calculateAverageVoltage(batteryVoltageProcessor1.value)
-                    val battery2Voltage = calculateAverageVoltage(batteryVoltageProcessor2.value)
+                    val battery1Voltage = calculateTotalVoltage(batteryVoltageProcessor1.value)
+                    val battery2Voltage = calculateTotalVoltage(batteryVoltageProcessor2.value)
                     batteryStateProcessor.onNext(
                         BatteryState.DualBatteryState(
                             batteryPercentageProcessor1.value,
@@ -160,6 +160,11 @@ class BatteryWidgetModel(
         // No Code
     }
 
+    private fun calculateTotalVoltage(cellVoltages: List<Int>?): Float {
+        return if (!cellVoltages.isNullOrEmpty()) {
+            cellVoltages.sum().toFloat().milliVoltsToVolts()
+        } else 0f
+    }
     private fun calculateAverageVoltage(cellVoltages: List<Int>?): Float {
         return if (cellVoltages != null && cellVoltages.isNotEmpty()) {
             cellVoltages.average().toFloat().milliVoltsToVolts()

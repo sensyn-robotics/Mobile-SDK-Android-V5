@@ -1,5 +1,5 @@
-<script>window.pathPrefix="../../";</script><!DOCTYPE html>
-<html lang="en" style="padding-bottom:0px" class="local"></html>
+<script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><!DOCTYPE html>
+<html lang="en"></html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,9 +10,39 @@
 <body>
   <nav id="site-header" class="site-header navbar">
     <div class="container">
-      <div class="navbar-header"><a href="/" class="logo"><img src="../../images/dji-logo@2x.png">Android SDK API Reference</a></div>
+      <div class="navbar-header"><a href="/" class="logo"><img src="../../images/dji-logo@2x.png">Developer</a></div>
+      <div id="header-navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/mobile-sdk">Mobile SDK</a></li>
+          <li><a href="/ux-sdk">UX SDK</a></li>
+          <li><a href="/onboard-sdk">Onboard SDK</a></li>
+          <li><a href="/payload-sdk">Payload SDK</a></li>
+          <li><a href="/windows-sdk">Windows SDK</a></li>
+        </ul>
+        <ul v-cloak v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register" class="head-cta">Register</a></li>
+        </ul>
+        <ul v-cloak v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
+          <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i class="fa fa-user"></i></a>
+            <ul class="hovedown-menu hovedown-menu-right">
+              <li><a href="/user">User Center</a></li>
+              <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
+  <div data-offset-top="60" data-spy="affix" class="sub-nav">
+    <div class="container">
+      <h1 class="logo">Mobile SDK</h1>
+      <nav><a href="/mobile-sdk">Overview</a><a href="https://developer.dji.com/doc/mobile-sdk-tutorial/en/">Documentation</a><a href="/mobile-sdk/downloads">Downloads</a><a href="https://sdk-forum.dji.net/hc/en-us">Support</a><span class="active hovedown menu-item">English<span class="caret"></span>
+          <ul class="hovedown-menu">
+            <li><a href="/cn/api-reference-v5/android-api/index.html">中文</a></li>
+          </ul></span></nav>
+    </div>
+  </div>
   <div id="documentation-page" class="documentation-page">
     <div class="container">
       <div class="site-sidebar">
@@ -90,9 +120,15 @@
                                       </dd>
                                       <dd><a href="Value_Camera_Struct_MSDKZoomRatiosRange.html">ZoomRatiosRange</a>
                                       </dd>
+                                      <dd><a href="Value_Camera_Struct_VideoPreRecordDurationMsg.html">VideoPreRecordDurationInfo</a>
+                                      </dd>
+                                      <dd><a href="Value_Camera_Struct_VideoRecordPlanMsg.html">VideoRecordPlanInfo</a>
+                                      </dd>
                                       <dd><a href="Value_Camera_Struct_LaserMeasureInformationMsg.html">LaserMeasureInformation</a>
                                       </dd>
                                       <dd><a href="Value_Camera_Struct_MultiSpectralFusionDisplayRangeMsg.html">MultiSpectralFusionDisplayRange</a>
+                                      </dd>
+                                      <dd><a href="Value_Camera_Struct_IsRecordingInfoMsg.html">VideoRecordingStatus</a>
                                       </dd>
                                       <dd><a href="Value_Camera_Struct_MSDKCameraStreamSettings.html">CameraStreamSettingsInfo</a>
                                       </dd>
@@ -103,6 +139,8 @@
                                       <dd><a href="Value_Camera_Struct_CustomExpandNameSettings.html">CustomExpandNameSettings</a>
                                       </dd>
                                       <dd><a href="Value_Camera_Struct_WatermarkDisplayContentSettings.html">WatermarkDisplayContentSettings</a>
+                                      </dd>
+                                      <dd><a href="Value_Camera_Struct_ZoomPointTargetMsg.html">ZoomTargetPointInfo</a>
                                       </dd>
                                       <dd><a href="Value_Camera_Struct_ThermalGainModeTemperatureRangeMsg.html">ThermalGainModeTemperatureRange</a>
                                       </dd>
@@ -124,7 +162,7 @@
                                       </dd>
                                       <dd><a href="Value_Common_Struct_Velocity3D.html">Velocity3D</a>
                                       </dd>
-                                      <dd><a href="Value_Common_Struct_IntValueConfig.html">IntMinMax</a>
+                                      <dd><a href="Value_Common_Struct_IntValueConfig.html">IntValueConfig</a>
                                       </dd>
                                       <dd><a href="Value_Common_Struct_RectF.html">DoubleRect4Sides</a>
                                       </dd>
@@ -155,6 +193,8 @@
                                       <dd><a href="Value_RemoteController_Struct_RCModeChannelTypeMsg.html">MultiControlChannelInfo</a>
                                       </dd>
                                       <dd><a href="Value_RemoteController_Struct_RcFiveDimensionPressedStatus.html">FiveDimensionPressedStatus</a>
+                                      </dd>
+                                      <dd><a href="Value_FlightController_LookAtInfo.html">LookAtInfo</a>
                                       </dd>
                                       <dd><a href="Value_FlightController_Struct_MultiGimbalSyncControlMsg.html">MultiGimbalSyncControlInfo</a>
                                       </dd>
@@ -228,8 +268,6 @@
                                       </dd>
                                       <dd><a data-href="../IMediaDataCenter/IVideoStreamManager_IVideoChannel.html" class="sub-toggle">IVideoChannel<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                                         <ul class="sub-menu">
-                                                <dd><a href="../IMediaDataCenter/IVideoStreamManager_IVideoChannel_StreamDataListener.html">StreamDataListener</a>
-                                                </dd>
                                                 <dd><a href="../IMediaDataCenter/IVideoStreamManager_IVideoChannel_VideoChannelStateChangeListener.html">VideoChannelStateChangeListener</a>
                                                 </dd>
                                         </ul>
@@ -245,6 +283,22 @@
                                         </ul>
                                       </dd>
                                       <dd><a href="../IMediaDataCenter/IVideoStreamManager_StreamSourceListener.html">StreamSourceListener</a>
+                                      </dd>
+                              </ul>
+                            </dd>
+                            <dd><a data-href="../IMediaDataCenter/ICameraStreamManager.html" class="sub-toggle">ICameraStreamManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+                              <ul class="sub-menu">
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_AvailableCameraUpdatedListener.html">AvailableCameraUpdatedListener</a>
+                                      </dd>
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_CameraFrameListener.html">CameraFrameListener</a>
+                                      </dd>
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_ReceiveStreamListener.html">ReceiveStreamListener</a>
+                                      </dd>
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_StreamInfo.html">StreamInfo</a>
+                                      </dd>
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_PinPointInfo.html">PinPointInfo</a>
+                                      </dd>
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_PinPoint.html">PinPoint</a>
                                       </dd>
                               </ul>
                             </dd>
@@ -273,6 +327,8 @@
                                       <dd><a href="../IMediaDataCenter/IMediaManager_VideoPlayStateListener.html">VideoPlayStateListener</a>
                                       </dd>
                                       <dd><a href="../IMediaDataCenter/IMediaManager_MediaFileDownloadListener.html">MediaFileDownloadListener</a>
+                                      </dd>
+                                      <dd><a href="../IMediaDataCenter/IMediaManager_MediaFrameListener.html">MediaFrameListener</a>
                                       </dd>
                               </ul>
                             </dd>
@@ -430,6 +486,10 @@
                             </dd>
                             <dd><a href="../IFlyZoneManager/IFlyZoneManager_FlySafeNotificationListener.html">FlySafeNotificationListener</a>
                             </dd>
+                            <dd><a href="../IFlyZoneManager/IFlyZoneManager_FlySafeDatabaseListener.html">FlySafeDatabaseListener</a>
+                            </dd>
+                            <dd><a href="../IFlyZoneManager/IFlyZoneManager_FlySafeDatabaseInfo.html">FlySafeDatabaseInfo</a>
+                            </dd>
                     </ul>
                   </dd>
                   <dd><a data-href="../ILTEManager/ILTEManager.html" class="sub-toggle">ILTEManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
@@ -488,6 +548,10 @@
                             </dd>
                             <dd><a href="../IMegaphoneManager/IMegaphoneManager_RealTimeTransimissionStateListener.html">RealTimeTransimissionStateListener</a>
                             </dd>
+                            <dd><a href="../IMegaphoneManager/IMegaphoneManager_MegaphoneInfoListener.html">MegaphoneInfoListener</a>
+                            </dd>
+                            <dd><a href="../IMegaphoneManager/IMegaphoneManager_MegaphoneInfo.html">MegaphoneInfo</a>
+                            </dd>
                     </ul>
                   </dd>
                   <dd><a data-href="../IPipelineManager/IPipelineManager.html" class="sub-toggle">IPipelineManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
@@ -537,6 +601,14 @@
                             <dd><a href="../IUASRemoteIDManager/IUASRemoteIDManager_UARegistrationNumberStatus.html">UARegistrationNumberStatus</a>
                             </dd>
                             <dd><a href="../IUASRemoteIDManager/IUASRemoteIDManager_UARegistrationNumberStatusListener.html">UARegistrationNumberStatusListener</a>
+                            </dd>
+                            <dd><a href="../IUASRemoteIDManager/IUASRemoteIDManager_OperatorRegistrationNumberStatus.html">OperatorRegistrationNumberStatus</a>
+                            </dd>
+                            <dd><a href="../IUASRemoteIDManager/IUASRemoteIDManager_OperatorRegistrationNumberStatusListener.html">OperatorRegistrationNumberStatusListener</a>
+                            </dd>
+                            <dd><a href="../IUASRemoteIDManager/IUASRemoteIDManager_RealNameRegistrationStatus.html">RealNameRegistrationStatus</a>
+                            </dd>
+                            <dd><a href="../IUASRemoteIDManager/IUASRemoteIDManager_RealNameRegistrationStatusListener.html">RealNameRegistrationStatusListener</a>
                             </dd>
                     </ul>
                   </dd>
@@ -605,7 +677,7 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIKeyInfo&lt;ControlMode&gt; KeyControlMode = <span class="keyword">new</span> KeyControlMode()</span><br><span class="line">           .canGet(<span class="keyword">true</span>).canSet(<span class="keyword">true</span>).canListen(<span class="keyword">false</span>).canPerformAction(<span class="keyword">false</span>).setIsEvent(<span class="keyword">false</span>)</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
 <h5 id="description-v4">Description:</h5>
-<p><font color="#666"><b>Parameter:</b><code><a href="../../Components/IKeyManager/DJIValue.html#value_remotecontroller_enum_rccontrolmode">ControlMode</a></code><br><br> To get remote controller control mode. <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
+<p><font color="#666"><b>Parameter:</b><code><a href="../../Components/IKeyManager/DJIValue.html#value_remotecontroller_enum_rccontrolmode">ControlMode</a></code><br><br> To get remote controller control mode. When calling the get method for the first time, you need to use the asynchronous method <code><a href="../../Components/IKeyManager/IKeyManager.html#ikeymanager_getvaluecompletioncallbackwithparam">getValue</a></code> to get the value. <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
 </div>
 <div class="api-row" id="key_remotecontroller_rcparamchargeremaining"><div class="api-col left">Battery Power Information</div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_rcparamchargeremaining_inline">KeyBatteryInfo</a></div></div><div class="inline-doc" id="key_remotecontroller_rcparamchargeremaining_inline" <blockquote>
 <div class="article"><h6><font color="#AAA">final </font>KeyBatteryInfo</h6></div>
@@ -794,7 +866,7 @@ To get remote controller right dial offset value. The value range is [-660,660].
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIKeyInfo&lt;RcFirmwareInfo&gt; KeyRcFirmwareInfo = <span class="keyword">new</span> DJIKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),<span class="string">"RcFirmwareInfo"</span>, <span class="keyword">new</span> DJIValueConverter&lt;&gt;(RcFirmwareInfo<span class="class">.<span class="keyword">class</span>)).<span class="title">canGet</span>(<span class="title">true</span>).<span class="title">canSet</span>(<span class="title">false</span>).<span class="title">canListen</span>(<span class="title">true</span>).<span class="title">canPerformAction</span>(<span class="title">false</span>).<span class="title">setIsEvent</span>(<span class="title">false</span>)</span></span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
 <h5 id="description-v25">Description:</h5>
-<p><font color="#666">Get the current firmware information of the remote controller. <br><br><code><i>Supported since MSDK 5.4.0</i></code></font></p>
+<p><font color="#666">Get the current firmware information of the remote controller. <br><br><b>Note: This Key only supports DJI RC Plus remote controller and DJI RC N1 remote controller, and is used to obtain remote controller firmware information and switch firmware type. </b>                        <br><br><code><i>Supported since MSDK 5.4.0</i></code></font></p>
 </div>
 <div class="api-row" id="key_remotecontroller_switchrcfirmware"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_switchrcfirmware_inline">KeySwitchRcFirmware</a></div></div><div class="inline-doc" id="key_remotecontroller_switchrcfirmware_inline" <blockquote>
 <div class="article"><h6><font color="#AAA">final </font>KeySwitchRcFirmware</h6></div>
@@ -830,12 +902,24 @@ To get remote controller right dial offset value. The value range is [-660,660].
 To get remote controller pairing status.
 <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
 </div>
+<div class="api-row" id="key_remotecontroller_controllinggimbal"><div class="api-col left">Gimbal Control</div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_controllinggimbal_inline">KeyControllingGimbal</a></div></div><div class="inline-doc" id="key_remotecontroller_controllinggimbal_inline" <blockquote>
+<div class="article"><h6><font color="#AAA">final </font>KeyControllingGimbal</h6></div>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIKeyInfo&lt;ComponentIndexType&gt; KeyControllingGimbal = <span class="keyword">new</span> KeyControllingGimbal()</span><br><span class="line">           .canGet(<span class="keyword">false</span>).canSet(<span class="keyword">true</span>).canListen(<span class="keyword">false</span>).canPerformAction(<span class="keyword">false</span>).setIsEvent(<span class="keyword">false</span>)</span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
+<h5 id="description-v30">Description:</h5>
+<p><font color="#666"><b>Parameter:</b><code><a href="../../Components/IKeyManager/KeyTools.html#value_common_enum_componentindextype">ComponentIndexType</a></code><br><br>
+Set the gimbal and camera that the remote controller needs to control. After the aircraft is powered on, the remote controller defaults to controlling the main (left) gimbal and camera. You can set the remote controller to control the right gimbal and camera, or the up gimbal and camera through this key.
+<br><br><b>Note:<br>
+Supported Aircraft: M300 RTK and M350 RTK.</b>
+<br><br><code><i>Supported since MSDK 5.7.0</i></code></font></p>
+</div>
 <div class="api-row" id="key_remotecontroller_rebootdevice"><div class="api-col left">Reboot</div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_rebootdevice_inline">KeyRebootDevice</a></div></div><div class="inline-doc" id="key_remotecontroller_rebootdevice_inline" <blockquote>
 <div class="article"><h6><font color="#AAA">final </font>KeyRebootDevice</h6></div>
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIActionKeyInfo&lt;EmptyMsg,EmptyMsg&gt; KeyRebootDevice = <span class="keyword">new</span> DJIActionKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),<span class="string">"RebootDevice"</span>, EmptyValueConverter.converter,EmptyValueConverter.converter).canGet(<span class="keyword">false</span>).canSet(<span class="keyword">false</span>).canListen(<span class="keyword">false</span>).canPerformAction(<span class="keyword">true</span>).setIsEvent(<span class="keyword">false</span>)</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v30">Description:</h5>
+<h5 id="description-v31">Description:</h5>
 <p><font color="#666">Reboot the remote controller.
 <br><br><code><i>Supported since MSDK 5.1.0</i></code></font></p>
 </div>
@@ -846,7 +930,7 @@ To get remote controller pairing status.
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIKeyInfo&lt;Boolean&gt; KeyMultiControlIsSupported = <span class="keyword">new</span> DJIKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),<span class="string">"MultiControlIsSupported"</span>, SingleValueConverter.BooleanConverter).canGet(<span class="keyword">true</span>).canSet(<span class="keyword">false</span>).canListen(<span class="keyword">true</span>).canPerformAction(<span class="keyword">false</span>).setIsEvent(<span class="keyword">false</span>).setInnerIdentifier(<span class="string">"IsMasterSlaveModeV4Supported"</span>)</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v31">Description:</h5>
+<h5 id="description-v32">Description:</h5>
 <p><font color="#666"><b>Parameter:</b>Boolean<br><br>
 <code>true</code> means dual control is supported.
 <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
@@ -856,7 +940,7 @@ To get remote controller pairing status.
 
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">static final DJIActionKeyInfo&lt;MultiControlChannel,EmptyMsg&gt; KeyMultiControlRequestPairing = new DJIActionKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),"MultiControlRequestPairing", new SingleValueConverter&lt;&gt;(MultiControlChannel.class,MultiControlChannelInfo.class),EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false).setInnerIdentifier("StartModePairing")</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v32">Description:</h5>
+<h5 id="description-v33">Description:</h5>
 <p><font color="#666"><b>Parameter:</b><code><a href="../../Components/IKeyManager/DJIValue.html#value_common_enum_rcmodechannel">MultiControlChannel</a></code><br><br>
 Start dual control pairing. The remote controller can be switched to A controller or B controller for pairing with the aircraft.
 <br><br><b>Note:<br>
@@ -868,7 +952,7 @@ Call this interface to pair the remote controller to <code><a href="../../Compon
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIKeyInfo&lt;MultiControlChannel&gt; KeyMultiControlChannel = <span class="keyword">new</span> KeyMultiControlChannel()</span><br><span class="line">           .canGet(<span class="keyword">true</span>).canSet(<span class="keyword">false</span>).canListen(<span class="keyword">true</span>).canPerformAction(<span class="keyword">false</span>).setIsEvent(<span class="keyword">false</span>)</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v33">Description:</h5>
+<h5 id="description-v34">Description:</h5>
 <p><font color="#666"><b>Parameter: </b><code><a href="../../Components/IKeyManager/DJIValue.html#value_common_enum_rcmodechannel">MultiControlChannel</a></code><br><br>
 Get the muti-control channel of currently connected remote controller.
 <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
@@ -878,7 +962,7 @@ Get the muti-control channel of currently connected remote controller.
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIKeyInfo&lt;Integer&gt; KeyMultiControlOnlineRcCount = <span class="keyword">new</span> DJIKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),<span class="string">"MultiControlOnlineRcCount"</span>, SingleValueConverter.IntegerConverter).canGet(<span class="keyword">true</span>).canSet(<span class="keyword">false</span>).canListen(<span class="keyword">true</span>).canPerformAction(<span class="keyword">false</span>).setIsEvent(<span class="keyword">false</span>).setInnerIdentifier(<span class="string">"MultiRcOnlineRCCount"</span>)</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v34">Description:</h5>
+<h5 id="description-v35">Description:</h5>
 <p><font color="#666"><b>Parameter:</b>Integer<br><br> get the number of currently connected remote controller. <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
 </div>
 <div class="api-row" id="key_remotecontroller_multirconlineappcount"><div class="api-col left">Online App Number</div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_multirconlineappcount_inline">KeyMultiControlOnlineAppCount</a></div></div><div class="inline-doc" id="key_remotecontroller_multirconlineappcount_inline" <blockquote>
@@ -886,7 +970,7 @@ Get the muti-control channel of currently connected remote controller.
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIKeyInfo&lt;Integer&gt; KeyMultiControlOnlineAppCount = <span class="keyword">new</span> DJIKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),<span class="string">"MultiControlOnlineAppCount"</span>, SingleValueConverter.IntegerConverter).canGet(<span class="keyword">true</span>).canSet(<span class="keyword">false</span>).canListen(<span class="keyword">true</span>).canPerformAction(<span class="keyword">false</span>).setIsEvent(<span class="keyword">false</span>).setInnerIdentifier(<span class="string">"MultiRcOnlineAPPCount"</span>)</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v35">Description:</h5>
+<h5 id="description-v36">Description:</h5>
 <p><font color="#666"><b>Parameter:</b>Integer<br><br> get the number of currently connected App.<br> NOTICE: The App mentioned here includes DJI's official Apps and Third-party Apps developed through DJI MSDK. <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
 </div>
 <div class="api-row" id="key_remotecontroller_rcmultistatus"><div class="api-col left">Dual Control Connection Status</div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_rcmultistatus_inline">KeyMultiControlStatus</a></div></div><div class="inline-doc" id="key_remotecontroller_rcmultistatus_inline" <blockquote>
@@ -894,7 +978,7 @@ Get the muti-control channel of currently connected remote controller.
 
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">static final DJIKeyInfo&lt;MultiControlStatusInfo&gt; KeyMultiControlStatus = new DJIKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),"MultiControlStatus", new DJIValueConverter&lt;&gt;(MultiControlStatusInfo.class)).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false).setInnerIdentifier("RcMultiStatus")</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v36">Description:</h5>
+<h5 id="description-v37">Description:</h5>
 <p><font color="#666"><b>Parameter:</b><code><a href="../../Components/IKeyManager/Value_RemoteController_Struct_RcMultiStatusMsg.html#value_remotecontroller_struct_rcmultistatusmsg">MultiControlStatusInfo</a></code><br><br>
 To get dual controller connection status. This interface can be used to check the online status of A controller, the Apps in A controller, B controller and the Apps in B controller. <br>
 <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
@@ -904,7 +988,7 @@ To get dual controller connection status. This interface can be used to check th
 
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">static final DJIKeyInfo&lt;MultiControlFlightControlAuthorityOwnerInfo&gt; KeyMultiControlFlightControlAuthorityOwner = new DJIKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),"MultiControlFlightControlAuthorityOwner", new DJIValueConverter&lt;&gt;(MultiControlFlightControlAuthorityOwnerInfo.class)).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false).setInnerIdentifier("MultiRCFlightControlAuthOwner")</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v37">Description:</h5>
+<h5 id="description-v38">Description:</h5>
 <p><font color="#666"><b>Parameter:</b><code><a href="../../Components/IKeyManager/Value_RemoteController_Struct_MultiRCFlightControlAuthOwnerMsg.html#value_remotecontroller_struct_multircflightcontrolauthownermsg">MultiControlFlightControlAuthorityOwnerInfo</a></code><br><br> To get the current flight control whether it is in control A or control B. <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
 </div>
 <div class="api-row" id="key_remotecontroller_multircgimbalscontrolauthowner"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_multircgimbalscontrolauthowner_inline">KeyMultiControlGimbalAuthorityOwner</a></div></div><div class="inline-doc" id="key_remotecontroller_multircgimbalscontrolauthowner_inline" <blockquote>
@@ -912,7 +996,7 @@ To get dual controller connection status. This interface can be used to check th
 
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">static final DJIKeyInfo&lt;List&lt;MultiControlChannelInfo&gt;&gt; KeyMultiControlGimbalAuthorityOwner = new DJIKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),"MultiControlGimbalAuthorityOwner", new SingleValueConverter&lt;&gt;((Class)List.class,MultiRcGimbalsControlAuthOwnerMsg.class)).canGet(true).canSet(false).canListen(true).canPerformAction(false).setIsEvent(false).setInnerIdentifier("MultiRcGimbalsControlAuthOwner")</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v38">Description:</h5>
+<h5 id="description-v39">Description:</h5>
 <p><font color="#666"><b>Parameter:</b>List&lt;<code><a href="../../Components/IKeyManager/Value_RemoteController_Struct_RCModeChannelTypeMsg.html#value_remotecontroller_struct_rcmodechanneltypemsg">MultiControlChannelInfo</a></code>&gt;<br><br> To get the current gimbal control whether it is in control A or control B. <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
 </div>
 <div class="api-row" id="key_remotecontroller_multirccontrolauthoritysurpass"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_multirccontrolauthoritysurpass_inline">KeyMultiControlAuthorityObtain</a></div></div><div class="inline-doc" id="key_remotecontroller_multirccontrolauthoritysurpass_inline" <blockquote>
@@ -920,7 +1004,7 @@ To get dual controller connection status. This interface can be used to check th
 
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">static final DJIActionKeyInfo&lt;List&lt;MultiControlAuthorityType&gt;,EmptyMsg&gt; KeyMultiControlAuthorityObtain = new DJIActionKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),"MultiControlAuthorityObtain", new SingleValueConverter&lt;&gt;((Class)List.class,RCAuthorityModes.class),EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false).setInnerIdentifier("MultiRcControlAuthoritySurpass")</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v39">Description:</h5>
+<h5 id="description-v40">Description:</h5>
 <p><font color="#666"><b>Parameter:</b>List&lt;<code><a href="../../Components/IKeyManager/DJIValue.html#value_common_enum_rcauthoritymode">MultiControlAuthorityType</a></code>&gt;<br><br>
 Grab control of flight or gimbal. If a remote controller can only control the gimbal, it can use control stocks. If a user has both aircraft flight control and gimbal control, he/she can use control sticks to control the orientation of the aircraft, and gimbal dial to control the gimbal.
 <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
@@ -930,7 +1014,7 @@ Grab control of flight or gimbal. If a remote controller can only control the gi
 
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">static final DJIActionKeyInfo&lt;MultiControlLockAuthorityInfo,EmptyMsg&gt; KeyMultiControlLockAuthority = new DJIActionKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),"MultiControlLockAuthority", new DJIValueConverter&lt;&gt;(MultiControlLockAuthorityInfo.class),EmptyValueConverter.converter).canGet(false).canSet(false).canListen(false).canPerformAction(true).setIsEvent(false).setInnerIdentifier("MultiRcControlLockRight")</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v40">Description:</h5>
+<h5 id="description-v41">Description:</h5>
 <p><font color="#666"><b>Parameter:</b><code><a href="../../Components/IKeyManager/Value_Common_Struct_RCAuthorityLockControlMsg.html#value_common_struct_rcauthoritylockcontrolmsg">MultiControlLockAuthorityInfo</a></code><br><br>
 Lock control of flight or gimbal. Control will not be grabbed after being locked.
 <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
@@ -940,7 +1024,7 @@ Lock control of flight or gimbal. Control will not be grabbed after being locked
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIKeyInfo&lt;Boolean&gt; KeyMultiControlFlightControlAuthorityLockStatus = <span class="keyword">new</span> DJIKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),<span class="string">"MultiControlFlightControlAuthorityLockStatus"</span>, SingleValueConverter.BooleanConverter).canGet(<span class="keyword">true</span>).canSet(<span class="keyword">false</span>).canListen(<span class="keyword">true</span>).canPerformAction(<span class="keyword">false</span>).setIsEvent(<span class="keyword">false</span>).setInnerIdentifier(<span class="string">"MultiRCFlightControlAuthLockState"</span>)</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v41">Description:</h5>
+<h5 id="description-v42">Description:</h5>
 <p><font color="#666"><b>Parameter:</b>Boolean<br><br> Return whether the flight control is locked. <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
 </div>
 <div class="api-row" id="key_remotecontroller_multirclostnotice"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_multirclostnotice_inline">KeyMultiControlLostControlNotice</a></div></div><div class="inline-doc" id="key_remotecontroller_multirclostnotice_inline" <blockquote>
@@ -948,7 +1032,7 @@ Lock control of flight or gimbal. Control will not be grabbed after being locked
 
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">static final DJIKeyInfo&lt;MultiControlLostControlInfo&gt; KeyMultiControlLostControlNotice = new DJIKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),"MultiControlLostControlNotice", new DJIValueConverter&lt;&gt;(MultiControlLostControlInfo.class)).canGet(false).canSet(false).canListen(true).canPerformAction(false).setIsEvent(true).setInnerIdentifier("MultiRcLostNotice")</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v42">Description:</h5>
+<h5 id="description-v43">Description:</h5>
 <p><font color="#666"><b>Parameter:</b><code><a href="../../Components/IKeyManager/Value_RemoteController_Struct_RCAuthorityLostPushMsg.html#value_remotecontroller_struct_rcauthoritylostpushmsg">MultiControlLostControlInfo</a></code><br><br> Monitor the notification event that the remote control with flight control or gimbal control loses connection. When remote controller with flight control loses connection, remote controller without flight control can call <code><a href="../../Components/IKeyManager/Key_RemoteController_RemoteControllerKey.html#key_remotecontroller_multirccontrolauthoritysurpass">KeyMultiControlAuthorityObtain</a></code> to take over flight control, or call <code><a href="../../Components/IKeyManager/Key_RemoteController_RemoteControllerKey.html#key_remotecontroller_multircexecuteaircraftlostlogic">KeyMultiControlExecuteFailSafeActionWhenLostControl</a></code> to make the aircraft immediately execute the fail safe behavior which gets with <code><a href="../../Components/IKeyManager/Key_FlightController_FlightControllerKey.html#key_flightcontroller_failsafeaction">KeyFailsafeAction</a></code>. <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
 </div>
 <div class="api-row" id="key_remotecontroller_multircexecuteaircraftlostlogic"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA"> </div><div class="api-col right"><a class="trigger" href="#key_remotecontroller_multircexecuteaircraftlostlogic_inline">KeyMultiControlExecuteFailSafeActionWhenLostControl</a></div></div><div class="inline-doc" id="key_remotecontroller_multircexecuteaircraftlostlogic_inline" <blockquote>
@@ -956,7 +1040,7 @@ Lock control of flight or gimbal. Control will not be grabbed after being locked
 
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> DJIActionKeyInfo&lt;EmptyMsg,EmptyMsg&gt; KeyMultiControlExecuteFailSafeActionWhenLostControl = <span class="keyword">new</span> DJIActionKeyInfo&lt;&gt;(componentType.value(),subComponentType.value(),<span class="string">"MultiControlExecuteFailSafeActionWhenLostControl"</span>, EmptyValueConverter.converter,EmptyValueConverter.converter).canGet(<span class="keyword">false</span>).canSet(<span class="keyword">false</span>).canListen(<span class="keyword">false</span>).canPerformAction(<span class="keyword">true</span>).setIsEvent(<span class="keyword">false</span>).setInnerIdentifier(<span class="string">"MultiRcExecuteAircraftLostLogic"</span>)</span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width="15%"><font color="#999"><i>Package:</i></font></td><td width="85%"><font color="#999">dji.sdk.keyvalue.key</font></td></tr></table></html>
-<h5 id="description-v43">Description:</h5>
+<h5 id="description-v44">Description:</h5>
 <p><font color="#666">When remote controller with flight control loses connection, remote controller without flight control can call this interface to make the aircraft immediately execute the fail safe behavior which gets with <code><a href="../../Components/IKeyManager/Key_FlightController_FlightControllerKey.html#key_flightcontroller_failsafeaction">KeyFailsafeAction</a></code>. <br><br><code><i>Supported since MSDK 5.0.0</i></code></font></p>
 </div>
 
@@ -989,6 +1073,22 @@ Lock control of flight or gimbal. Control will not be grabbed after being locked
       </div>
     </div>
   </div>
+  <footer id="site-footer" class="site-footer">
+    <div class="container">
+      <div class="foot-nav row">
+        <nav class="link-list col-xs-2"><span class="title">SDK</span><a href="/mobile-sdk">Mobile SDK</a><a href="/ux-sdk">UX SDK</a><a href="/onboard-sdk">Onboard SDK</a><a href="/payload-sdk">Payload SDK</a><a href="/windows-sdk">Windows SDK</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Info</span><a href="/products">Products</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Community</span><a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">Stack Overflow</a><a href="https://www.youtube.com/channel/UCPQwN5xsob8zZGIcDhkYqUA" target="_blank">YouTube</a><a href="https://twitter.com/djidevelopers" target="_blank">Twitter</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Contact Us</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">BILLING</span><a href="mailto:billing-dev@dji.com"> billing-dev@dji.com</a></nav>
+      </div>
+      <div class="foot-copyright row">
+        <div class="col-xs-3 foot-logo"><img src="../../images/dji-logo-foot.png"></div>
+        <div class="copyright col-xs-7"><span>Copyright © 2022 DJI All Rights Reserved</span><a href="/policies/privacy">Privacy Policy</a><a href="/policies/terms">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
   <script type="text/javascript">
     window.Config = window.config = {
       sdk: "mobile-sdk",

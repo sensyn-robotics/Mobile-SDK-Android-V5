@@ -1,4 +1,4 @@
-# DJI Mobile SDK for Android V5 Latest Version 5.18.0
+# DJI Mobile SDK for Android V5 Latest Version V5.20.1
 
 [中文版](README_CN.md)
 
@@ -7,6 +7,7 @@
 DJI Mobile SDK V5 has a series of APIs to control the software and hardware interfaces of an aircraft. We provide an open source production sample and a tutorial for developers to develop a more competitive drone solution on mobile device. This improves the experience and efficiency of MSDK App development.
 
 Supported Product:
+* [DJI Matrice 5T]()
 * [DJI Mavic 3TA]()
 * [Matrice 400]()
 * [Matrice 4D Enterprise Series]()
@@ -27,12 +28,20 @@ Supported Product:
 ├── Docs
 │   └── Android_API
 ├── LICENSE.txt
+├── OpenPilotWizard
+│   ├── README.md
+│   ├── README_CN.md
+│   └── open-pilot-wizard-installer-1.0.0.zip
 ├── README.md
 ├── README_CN.md
 └── SampleCode-V5
     ├── android-sdk-v5-as
     ├── android-sdk-v5-sample
-    └── android-sdk-v5-uxsdk
+    ├── android-sdk-v5-uxsdk
+    ├── open-pilot-plugin-sample
+    ├── open-pilot-flighttask-sample
+    ├── open-pilot-gasdetection-sample
+    └── open-pilot-patrol-sample
 ```
 
 
@@ -47,6 +56,7 @@ Sample can be divided into three parts:
 
 - Scenographic Example: Provides scenographic sample support of aircraft.
 - Sample Module: Offer an Airplane Sample App.
+- Plugin Sample Module: Offer Pilot Plugin Sample Apps.
 
 For detailed configuration, please refer to [settings.gradle](SampleCode-V5/android-sdk-v5-as/settings.gradle).
 
@@ -57,6 +67,18 @@ Scenographic Example：
 Sample module:
 
 - sample：Compile aircraft sample App, which depends on uxsdk.
+- plugin sample：Compile aircraft plugin sample App, which depends on uxsdk.
+- flighttask sample：Flight task management demo plugin, with a local Node.js backend and a web console.
+- gasdetection sample：Gas detection demo plugin, with a local Node.js backend.
+- patrol sample：Intelligent patrol demo plugin, with a local Node.js backend.
+
+## Open Pilot Wizard (OPW)
+
+OPW is an AI toolkit for developing DJI Pilot plugins with OpenCode, Claude Code, or Codex. Describe your requirements in natural language to get help creating plugin projects, adding features, troubleshooting issues, and migrating existing MSDK apps.
+
+Download the [OPW 1.0.0 installer](OpenPilotWizard/open-pilot-wizard-installer-1.0.0.zip) using the raw-file download option on the file page. Give your AI tool the local ZIP path and ask it to follow `INSTALL_AGENT.md` inside the archive. If you have cloned this repository, use the archive in `OpenPilotWizard` directly.
+
+For installation and usage, see the [OPW README](OpenPilotWizard/README.md).
 
 ## Integration
 
@@ -65,7 +87,7 @@ For further detail on how to integrate the DJI Android SDK into your Android Stu
 
 ## AAR Explanation
 
-> **Notice:** sdkVersion = 5.18.0
+> **Notice:** sdkVersion = 5.20.1
 
 | SDK package | Explanation | How to use|
 | :---------------: | :-----------------:  | :---------------: |

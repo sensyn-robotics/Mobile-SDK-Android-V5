@@ -1,4 +1,4 @@
-# DJI Mobile SDK for Android V5 最新版本 V5.18.0
+# DJI Mobile SDK for Android V5 最新版本 V5.20.1
 [English Version](README.md)
 
 ## DJI Mobile SDK V5 是什么?
@@ -7,6 +7,7 @@ DJI Mobile SDK V5拥有更加简洁易用的无人机硬件控制接口和软件
 
 
 当前版本支持机型：
+* [DJI Matrice 5T]()
 * [DJI Mavic 3TA]()
 * [Matrice 400]()
 * [Matrice 4D 行业系列]()
@@ -27,12 +28,20 @@ DJI Mobile SDK V5拥有更加简洁易用的无人机硬件控制接口和软件
 ├── Docs
 │   └── Android_API
 ├── LICENSE.txt
+├── OpenPilotWizard
+│   ├── README.md
+│   ├── README_CN.md
+│   └── open-pilot-wizard-installer-1.0.0.zip
 ├── README.md
 ├── README_CN.md
 └── SampleCode-V5
     ├── android-sdk-v5-as
     ├── android-sdk-v5-sample
-    └── android-sdk-v5-uxsdk
+    ├── android-sdk-v5-uxsdk
+    ├── open-pilot-plugin-sample
+    ├── open-pilot-flighttask-sample
+    ├── open-pilot-gasdetection-sample
+    └── open-pilot-patrol-sample
 ```
 
 
@@ -47,6 +56,7 @@ Sample分为3部分：
 
 - 场景化示例：提供对飞机的场景化支持。
 - Sample模块：提供一个飞机Sample App。
+- 插件示例模块：提供多个 Pilot 插件示例 App。
 
 详细配置请参考[settings.gradle](SampleCode-V5/android-sdk-v5-as/settings.gradle)。
 
@@ -58,6 +68,18 @@ Sample分为3部分：
 Sample模块：
 
 - sample：编译飞机sample App，依赖uxsdk。
+- plugin sample：编译飞机插件示例 App，依赖uxsdk。
+- flighttask sample：飞行任务管理示例插件，自带本地 Node.js 后端与网页管理台。
+- gasdetection sample：气体检测示例插件，自带本地 Node.js 后端。
+- patrol sample：智能巡检示例插件，自带本地 Node.js 后端。
+
+## Open Pilot Wizard（OPW）
+
+OPW 是面向 DJI Pilot 插件开发的 AI 工具包，可配合 OpenCode、Claude Code 或 Codex，通过自然语言协助创建插件工程、开发功能、排查问题及迁移已有 MSDK 应用。
+
+下载 [OPW 1.0.0 安装包](OpenPilotWizard/open-pilot-wizard-installer-1.0.0.zip)（在文件页面选择下载原始文件），然后把本机 ZIP 路径告诉 AI，让它按照包内的 `INSTALL_AGENT.md` 完成安装。已克隆本仓库时，可直接使用 `OpenPilotWizard` 目录中的安装包。
+
+安装与使用说明请参考 [OPW 中文 README](OpenPilotWizard/README_CN.md)。
 
 ## 整合
 
@@ -66,7 +88,7 @@ Sample模块：
 
 ## AAR说明
 
-> **注意：** sdkVersion = 5.18.0
+> **注意：** sdkVersion = 5.20.1
 
 | SDK包| 说明| 使用方式|
 | :---------------: | :-----------------:  | :---------------: |

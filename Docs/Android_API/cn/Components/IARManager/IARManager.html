@@ -1,4 +1,4 @@
-<script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><script>window.pathPrefix="../../";</script><!DOCTYPE html>
+<script>window.pathPrefix="../../";</script><!DOCTYPE html>
 <html lang="en" style="padding-bottom:0px" class="local"></html>
 <head>
   <meta charset="utf-8">
@@ -39,8 +39,8 @@
           </div>
         </div>
         <div class="nav scrollable js-tree-menu">
-          <dl>
-            <dt>Manager Classes
+          <dl class="sidebar-group sidebar-group--common">
+            <dt>Common APIs
             </dt>
                   <dd><a data-href="../SDKManager/DJISDKManager.html" class="sub-toggle">ISDKManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                     <ul class="sub-menu">
@@ -256,6 +256,8 @@
                                       </dd>
                                       <dd><a data-href="../IMediaDataCenter/IVideoStreamManager_IVideoChannel.html" class="sub-toggle">IVideoChannel<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                                         <ul class="sub-menu">
+                                                <dd><a href="../IMediaDataCenter/IVideoStreamManager_IVideoChannel_StreamDataListener.html">StreamDataListener</a>
+                                                </dd>
                                                 <dd><a href="../IMediaDataCenter/IVideoStreamManager_IVideoChannel_VideoChannelStateChangeListener.html">VideoChannelStateChangeListener</a>
                                                 </dd>
                                         </ul>
@@ -276,6 +278,14 @@
                             </dd>
                             <dd><a data-href="../IMediaDataCenter/ICameraStreamManager.html" class="sub-toggle">ICameraStreamManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                               <ul class="sub-menu">
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_AvailableCameraUpdatedListener.html">AvailableCameraUpdatedListener</a>
+                                      </dd>
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_CameraFrameListener.html">CameraFrameListener</a>
+                                      </dd>
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_ReceiveStreamListener.html">ReceiveStreamListener</a>
+                                      </dd>
+                                      <dd><a href="../IMediaDataCenter/ICameraStreamManager_VisionAssistStatusListener.html">VisionAssistStatusListener</a>
+                                      </dd>
                                       <dd><a href="../IMediaDataCenter/ICameraStreamManager_StreamInfo.html">StreamInfo</a>
                                       </dd>
                                       <dd><a href="../IMediaDataCenter/ICameraStreamManager_PinPointInfo.html">PinPointInfo</a>
@@ -311,8 +321,6 @@
                                       <dd><a href="../IMediaDataCenter/IMediaManager_MediaFileDownloadListener.html">MediaFileDownloadListener</a>
                                       </dd>
                                       <dd><a href="../IMediaDataCenter/IMediaManager_MediaFrameListener.html">MediaFrameListener</a>
-                                      </dd>
-                                      <dd><a href="../IMediaDataCenter/IMediaManager_PhotoAIInfo.html">PhotoAIInfo</a>
                                       </dd>
                               </ul>
                             </dd>
@@ -445,8 +453,6 @@
                                       <dd><a href="../IIntelligentFlightManager/IIntelligentFlightManager_FlyToMissionManager_FlyToTarget.html">FlyToTarget</a>
                                       </dd>
                               </ul>
-                            </dd>
-                            <dd><a href="../IIntelligentFlightManager/IIntelligentFlightManager_AutoParsingMask.html">AutoParsingMask</a>
                             </dd>
                     </ul>
                   </dd>
@@ -681,26 +687,66 @@
                     </ul>
                   </dd>
           </dl>
-          <dl>
-            <dt>Open Pilot Classes
+          <dl class="sidebar-group sidebar-group--plugins">
+            <dt>Plugin APIs
             </dt>
-                  <dd><a href="../IFileTransferManager/IFileTransferManager.html">IFileTransferManager</a>
+                  <dd><a data-href="" class="sub-toggle">IARManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+                    <ul class="sub-menu">
+                            <dd><a href="IARManager_ARCircleInfo.html">ARCircleInfo</a>
+                            </dd>
+                            <dd><a href="IARManager_ARDistAlpha.html">ARDistAlpha</a>
+                            </dd>
+                            <dd><a href="IARManager_ARDistLineWidth.html">ARDistLineWidth</a>
+                            </dd>
+                            <dd><a href="IARManager_ARFaceStroke.html">ARFaceStroke</a>
+                            </dd>
+                            <dd><a href="IARManager_ARIconOrthographicConfig.html">ARIconOrthographicConfig</a>
+                            </dd>
+                            <dd><a href="IARManager_ARIconPerspectiveConfig.html">ARIconPerspectiveConfig</a>
+                            </dd>
+                            <dd><a href="IARManager_ARLineInfo.html">ARLineInfo</a>
+                            </dd>
+                            <dd><a href="IARManager_ARPointConfig.html">ARPointConfig</a>
+                            </dd>
+                            <dd><a href="IARManager_ARPointInfo.html">ARPointInfo</a>
+                            </dd>
+                            <dd><a href="IARManager_ARPolygonFace.html">ARPolygonFace</a>
+                            </dd>
+                            <dd><a href="IARManager_ARPolygonInfo.html">ARPolygonInfo</a>
+                            </dd>
+                            <dd><a data-href="IARManager_ARRadarConfig.html" class="sub-toggle">ARRadarConfig<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+                              <ul class="sub-menu">
+                                      <dd><a href="IARManager_ARRadarConfig_Builder.html">Builder</a>
+                                      </dd>
+                              </ul>
+                            </dd>
+                            <dd><a href="IARManager_ARStrokeInfo.html">ARStrokeInfo</a>
+                            </dd>
+                            <dd><a href="IARManager_ARTextConfig.html">ARTextConfig</a>
+                            </dd>
+                    </ul>
                   </dd>
                   <dd><a data-href="../IRemoteViewPageManager/IRemoteViewPageManager.html" class="sub-toggle">IRemoteViewPageManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                     <ul class="sub-menu">
-                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_IRemoteViewOnClickListener.html">IRemoteViewOnClickListener</a>
+                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_ActivityConfig.html">ActivityConfig</a>
+                            </dd>
+                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_DividerConfig.html">DividerConfig</a>
                             </dd>
                             <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_IRemoteViewOnCheckedChangeListener.html">IRemoteViewOnCheckedChangeListener</a>
                             </dd>
+                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_IRemoteViewOnClickListener.html">IRemoteViewOnClickListener</a>
+                            </dd>
                             <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_IRemoteViewOnItemSelectedListener.html">IRemoteViewOnItemSelectedListener</a>
                             </dd>
-                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_RemoteView.html">RemoteView</a>
+                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_IRemoteViewTextWatcher.html">IRemoteViewTextWatcher</a>
                             </dd>
                             <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_LayoutParam.html">LayoutParam</a>
                             </dd>
-                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_WidgetLayoutParam.html">WidgetLayoutParam</a>
+                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_ListItemData.html">ListItemData</a>
                             </dd>
-                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_ActivityConfig.html">ActivityConfig</a>
+                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_ListItemOperation.html">ListItemOperation</a>
+                            </dd>
+                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_RemoteView.html">RemoteView</a>
                             </dd>
                             <dd><a data-href="../IRemoteViewPageManager/IRemoteViewPageManager_ShapeDescriptor.html" class="sub-toggle">ShapeDescriptor<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                               <ul class="sub-menu">
@@ -708,49 +754,9 @@
                                       </dd>
                               </ul>
                             </dd>
-                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_ListItemData.html">ListItemData</a>
+                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_TextSpanSeparatorConfig.html">TextSpanSeparatorConfig</a>
                             </dd>
-                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_ListItemOperation.html">ListItemOperation</a>
-                            </dd>
-                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_DividerConfig.html">DividerConfig</a>
-                            </dd>
-                    </ul>
-                  </dd>
-                  <dd><a data-href="../INavigateManager/INavigateManager.html" class="sub-toggle">INavigateManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
-                    <ul class="sub-menu">
-                            <dd><a href="../INavigateManager/INavigateManager_NavigateAction.html">NavigateAction</a>
-                            </dd>
-                    </ul>
-                  </dd>
-                  <dd><a data-href="../IMapWidgetManager/IMapWidgetManager.html" class="sub-toggle">IMapWidgetManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
-                    <ul class="sub-menu">
-                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapPolygonOptions.html">MapPolygonOptions</a>
-                            </dd>
-                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapPolylineOptions.html">MapPolylineOptions</a>
-                            </dd>
-                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapCircleOptions.html">MapCircleOptions</a>
-                            </dd>
-                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapMarkerOptions.html">MapMarkerOptions</a>
-                            </dd>
-                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapWidget.html">MapWidget</a>
-                            </dd>
-                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapWidgetItem.html">MapWidgetItem</a>
-                            </dd>
-                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapElement.html">MapElement</a>
-                            </dd>
-                    </ul>
-                  </dd>
-                  <dd><a data-href="" class="sub-toggle">IARManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
-                    <ul class="sub-menu">
-                            <dd><a href="IARManager_ARPointConfig.html">ARPointConfig</a>
-                            </dd>
-                            <dd><a href="IARManager_ARPointInfo.html">ARPointInfo</a>
-                            </dd>
-                            <dd><a href="IARManager_ARTextConfig.html">ARTextConfig</a>
-                            </dd>
-                            <dd><a href="IARManager_ARIconPerspectiveConfig.html">ARIconPerspectiveConfig</a>
-                            </dd>
-                            <dd><a href="IARManager_ARIconOrthographicConfig.html">ARIconOrthographicConfig</a>
+                            <dd><a href="../IRemoteViewPageManager/IRemoteViewPageManager_WidgetLayoutParam.html">WidgetLayoutParam</a>
                             </dd>
                     </ul>
                   </dd>
@@ -758,14 +764,18 @@
                     <ul class="sub-menu">
                             <dd><a href="../ICameraViewDrawingManager/ICameraViewDrawingManager_DrawingBoxInfo.html">DrawingBoxInfo</a>
                             </dd>
+                            <dd><a href="../ICameraViewDrawingManager/ICameraViewDrawingManager_DrawingPolygonInfo.html">DrawingPolygonInfo</a>
+                            </dd>
+                            <dd><a href="../ICameraViewDrawingManager/ICameraViewDrawingManager_DrawingTextInfo.html">DrawingTextInfo</a>
+                            </dd>
                             <dd><a href="../ICameraViewDrawingManager/ICameraViewDrawingManager_OpenDoubleRect.html">OpenDoubleRect</a>
+                            </dd>
+                            <dd><a href="../ICameraViewDrawingManager/ICameraViewDrawingManager_OpenPoint.html">OpenPoint</a>
                             </dd>
                     </ul>
                   </dd>
                   <dd><a data-href="../IRemoteDialogManager/IRemoteDialogManager.html" class="sub-toggle">IRemoteDialogManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                     <ul class="sub-menu">
-                            <dd><a href="../IRemoteDialogManager/IRemoteDialogManager_DialogMessage.html">DialogMessage</a>
-                            </dd>
                             <dd><a data-href="../IRemoteDialogManager/IRemoteDialogManager_DialogConfig.html" class="sub-toggle">DialogConfig<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
                               <ul class="sub-menu">
                                       <dd><a href="../IRemoteDialogManager/IRemoteDialogManager_DialogConfig_Builder.html">Builder</a>
@@ -774,13 +784,49 @@
                             </dd>
                             <dd><a href="../IRemoteDialogManager/IRemoteDialogManager_DialogElementConfig.html">DialogElementConfig</a>
                             </dd>
+                            <dd><a href="../IRemoteDialogManager/IRemoteDialogManager_DialogMessage.html">DialogMessage</a>
+                            </dd>
                             <dd><a href="../IRemoteDialogManager/IRemoteDialogManager_IDialogMessageListener.html">IDialogMessageListener</a>
                             </dd>
                     </ul>
                   </dd>
+                  <dd><a data-href="../IMapWidgetManager/IMapWidgetManager.html" class="sub-toggle">IMapWidgetManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+                    <ul class="sub-menu">
+                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapCircleOptions.html">MapCircleOptions</a>
+                            </dd>
+                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapElement.html">MapElement</a>
+                            </dd>
+                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapMarkerOptions.html">MapMarkerOptions</a>
+                            </dd>
+                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapPolygonOptions.html">MapPolygonOptions</a>
+                            </dd>
+                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapPolylineOptions.html">MapPolylineOptions</a>
+                            </dd>
+                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapWidget.html">MapWidget</a>
+                            </dd>
+                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapWidgetItem.html">MapWidgetItem</a>
+                            </dd>
+                            <dd><a href="../IMapWidgetManager/IMapWidgetManager_MapWidgetLayer.html">MapWidgetLayer</a>
+                            </dd>
+                    </ul>
+                  </dd>
+                  <dd><a href="../IRemoteServerConfigManager/IRemoteServerConfigManager.html">IRemoteServerConfigManager</a>
+                  </dd>
+                  <dd><a href="../IFileTransferManager/IFileTransferManager.html">IFileTransferManager</a>
+                  </dd>
+                  <dd><a data-href="../INavigateManager/INavigateManager.html" class="sub-toggle">INavigateManager<i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></a>
+                    <ul class="sub-menu">
+                            <dd><a href="../INavigateManager/INavigateManager_NavigateAction.html">NavigateAction</a>
+                            </dd>
+                    </ul>
+                  </dd>
+                  <dd><a href="../IDisconnectActionManager/IDisconnectActionManager.html">IDisconnectActionManager</a>
+                  </dd>
+                  <dd><a href="../IRemoteControlManager/IRemoteControlManager.html">IRemoteControlManager</a>
+                  </dd>
           </dl>
-          <dl>
-            <dt>Misc Classes
+          <dl class="sidebar-group sidebar-group--references">
+            <dt>References
             </dt>
                   <dd><a href="../DJIError/DJIError.html">IDJIError</a>
                   </dd>
@@ -800,7 +846,7 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">IARManager</span> </span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
 <h5 id="描述：">描述：</h5>
-<p><font color="#666">AR管理接口。 <br><br><b>注意： 先上传配置到Pilot，通过配置的ID，生成ARInfo，再设置ARInfo到Pilot。一个配置可以对应多个ARinfo 图标支持SVG，但对SVG文件字段有要求，具体可以参考Sample示例。据。</b> <br><br><code><i>MSDK 6.0.0开始支持</i></code></p>
+<p><font color="#666">AR管理接口。 注意： 先上传配置到Pilot，通过配置的ID，生成ARInfo，再设置ARInfo到Pilot。一个配置可以对应多个ARinfo 图标支持SVG，但对SVG文件字段有要求，具体可以参考Sample示例。据。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
 <h5 id="类成员">类成员:</h5>
 <div class="api-row" id="iarmanager_queryarpointconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_queryarpointconfig_inline">queryARPointConfig</a></div></div><div class="inline-doc" id="iarmanager_queryarpointconfig_inline"
 <blockquote>
@@ -809,7 +855,7 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">queryARPointConfig</span><span class="params">(<span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;List&lt;ARPointConfig&gt;&gt; callback)</span></span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
 <h5 id="描述：-2">描述：</h5>
-<p><font color="#666">查询AR点配置。 <br><br><code><i>MSDK 6.0.0开始支持</i></code></p>
+<p><font color="#666">查询AR点配置。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
 <h5 id="输入参数：">输入参数：</h5>
 <html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;List&lt;<a href="../../Components/IARManager/IARManager_ARPointConfig.html#iarmanager_arpointconfig">ARPointConfig</a>&gt;&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
 <div class="api-row" id="iarmanager_uploadarpointconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_uploadarpointconfig_inline">uploadARPointConfig</a></div></div><div class="inline-doc" id="iarmanager_uploadarpointconfig_inline"
@@ -819,7 +865,7 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">uploadARPointConfig</span><span class="params">(<span class="meta">@NonNull</span> ARPointConfig config, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;String&gt; callback)</span></span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
 <h5 id="描述：-3">描述：</h5>
-<p><font color="#666">上传AR点配置，上传AR点之前，需要设置AR点配置，一个配置可以对应多个点。 <br><br><code><i>MSDK 6.0.0开始支持</i></code></p>
+<p><font color="#666">上传AR点配置，上传AR点之前，需要设置AR点配置，一个配置可以对应多个点。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
 <h5 id="输入参数：-2">输入参数：</h5>
 <html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPointConfig.html#iarmanager_arpointconfig">ARPointConfig</a> <font color="#000">config</td><td><font color="#666"><i>AR点配置信息。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;String&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
 <div class="api-row" id="iarmanager_queryarpointinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_queryarpointinfo_inline">queryARPointInfo</a></div></div><div class="inline-doc" id="iarmanager_queryarpointinfo_inline"
@@ -829,9 +875,9 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">queryARPointInfo</span><span class="params">(<span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;List&lt;ARPointInfo&gt;&gt; callback)</span></span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
 <h5 id="描述：-4">描述：</h5>
-<p><font color="#666">查询AR点信息。 <br><br><code><i>MSDK 6.0.0开始支持</i></code></p>
+<p><font color="#666">查询AR点信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
 <h5 id="输入参数：-3">输入参数：</h5>
-<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;List&lt;<a href="../../Components/IARManager/IARManager_ARPointInfo.html#iarmanager_arpointinfo">ARPointInfo</a>&gt;&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;List&lt;<a href="../../Components/IARManager/IARManager_ARPointInfo.html#iarmanager_arpointinfo">ARPointInfo</a>&gt;&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口，返回的AR点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米。</i></td></tr></table></html></div>
 <div class="api-row" id="iarmanager_uploadarpointinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_uploadarpointinfo_inline">uploadARPointInfo</a></div></div><div class="inline-doc" id="iarmanager_uploadarpointinfo_inline"
 <blockquote>
 <div class="article"><h6 ><font color="#AAA">method </font>uploadARPointInfo</h6></div>
@@ -839,9 +885,9 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">uploadARPointInfo</span><span class="params">(<span class="meta">@NonNull</span> ARPointInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;String&gt; callback)</span></span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
 <h5 id="描述：-5">描述：</h5>
-<p><font color="#666">上传AR点信息。 <br><br><code><i>MSDK 6.0.0开始支持</i></code></p>
+<p><font color="#666">上传AR点信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
 <h5 id="输入参数：-4">输入参数：</h5>
-<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPointInfo.html#iarmanager_arpointinfo">ARPointInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR点信息。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;String&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPointInfo.html#iarmanager_arpointinfo">ARPointInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR点信息，点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;String&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
 <div class="api-row" id="iarmanager_updatearpointinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_updatearpointinfo_inline">updateARPointInfo</a></div></div><div class="inline-doc" id="iarmanager_updatearpointinfo_inline"
 <blockquote>
 <div class="article"><h6 ><font color="#AAA">method </font>updateARPointInfo</h6></div>
@@ -849,9 +895,9 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">updateARPointInfo</span><span class="params">(<span class="meta">@NonNull</span> ARPointInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallback callback)</span></span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
 <h5 id="描述：-6">描述：</h5>
-<p><font color="#666">更新AR点信息。 <br><br><code><i>MSDK 6.0.0开始支持</i></code></p>
+<p><font color="#666">更新AR点信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
 <h5 id="输入参数：-5">输入参数：</h5>
-<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPointInfo.html#iarmanager_arpointinfo">ARPointInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR点信息。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPointInfo.html#iarmanager_arpointinfo">ARPointInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR点信息，点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
 <div class="api-row" id="iarmanager_deletearpointinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_deletearpointinfo_inline">deleteARPointInfo</a></div></div><div class="inline-doc" id="iarmanager_deletearpointinfo_inline"
 <blockquote>
 <div class="article"><h6 ><font color="#AAA">method </font>deleteARPointInfo</h6></div>
@@ -859,36 +905,172 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">deleteARPointInfo</span><span class="params">(<span class="meta">@NonNull</span> ARPointInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallback callback)</span></span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
 <h5 id="描述：-7">描述：</h5>
-<p><font color="#666">删除AR点信息。 <br><br><code><i>MSDK 6.0.0开始支持</i></code></p>
+<p><font color="#666">删除AR点信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
 <h5 id="输入参数：-6">输入参数：</h5>
-<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPointInfo.html#iarmanager_arpointinfo">ARPointInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR点信息。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
-<h5 id="Related">Related:</h5>
-<div class="api-row" id="iarmanager_arpointconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARPointConfig.html">ARPointConfig</a></div></div><div class="api-row" id="iarmanager_arpointinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARPointInfo.html">ARPointInfo</a></div></div><div class="api-row" id="iarmanager_artextconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARTextConfig.html">ARTextConfig</a></div></div><div class="api-row" id="iarmanager_ariconprojectiontype"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">enum</div><div class="api-col right"><a class="trigger" href="#iarmanager_ariconprojectiontype_inline">ARIconProjectionType</a></div></div><div class="inline-doc" id="iarmanager_ariconprojectiontype_inline"
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPointInfo.html#iarmanager_arpointinfo">ARPointInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR点信息，点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_queryarlineinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_queryarlineinfo_inline">queryARLineInfo</a></div></div><div class="inline-doc" id="iarmanager_queryarlineinfo_inline"
 <blockquote>
-<div class="article"><h6 ><font color="#AAA">enum </font>ARIconProjectionType</h6></div>
+<div class="article"><h6 ><font color="#AAA">method </font>queryARLineInfo</h6></div>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">enum</span> <span class="title class_">ARIconProjectionType</span> </span><br></pre></td></tr></table></figure>
-<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.base.manager.ar</td></tr></table></html>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">queryARLineInfo</span><span class="params">(<span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;List&lt;ARLineInfo&gt;&gt; callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
 <h5 id="描述：-8">描述：</h5>
-<p><font color="#666">AR 投影类型枚举 用于表示 AR 中渲染元素所采用的投影方式。 <br><br><code><i>MSDK 6.0.0开始支持</i></code></p>
-<h5 id="Enum-Members">Enum Members:</h5>
-<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_ariconprojectiontype_none_inline"></a>NONE</td><td><font color="#666">无投影，不显示图标。</td></tr><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_ariconprojectiontype_perspective_inline"></a>PERSPECTIVE</td><td><font color="#666">透视投影，近大远小，符合人眼视觉习惯。</td></tr><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_ariconprojectiontype_orthographic_inline"></a>ORTHOGRAPHIC</td><td><font color="#666">正交投影，大小与距离无关，保持固定像素尺寸。</td></tr></table></html>
-<h5 id="Class-Members">Class Members:</h5>
-</div>
-<div class="api-row" id="iarmanager_arfontgravity"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">enum</div><div class="api-col right"><a class="trigger" href="#iarmanager_arfontgravity_inline">ARFontGravity</a></div></div><div class="inline-doc" id="iarmanager_arfontgravity_inline"
+<p><font color="#666">查询AR线信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-7">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;List&lt;<a href="../../Components/IARManager/IARManager_ARLineInfo.html#iarmanager_arlineinfo">ARLineInfo</a>&gt;&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口，返回的AR线各端点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_uploadarlineinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_uploadarlineinfo_inline">uploadARLineInfo</a></div></div><div class="inline-doc" id="iarmanager_uploadarlineinfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>uploadARLineInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">uploadARLineInfo</span><span class="params">(<span class="meta">@NonNull</span> ARLineInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;String&gt; callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-9">描述：</h5>
+<p><font color="#666">上传AR线信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-8">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARLineInfo.html#iarmanager_arlineinfo">ARLineInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR线信息，各端点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;String&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_updatearlineinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_updatearlineinfo_inline">updateARLineInfo</a></div></div><div class="inline-doc" id="iarmanager_updatearlineinfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>updateARLineInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">updateARLineInfo</span><span class="params">(<span class="meta">@NonNull</span> ARLineInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallback callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-10">描述：</h5>
+<p><font color="#666">更新AR线信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-9">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARLineInfo.html#iarmanager_arlineinfo">ARLineInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR线信息，各端点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_deletearlineinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_deletearlineinfo_inline">deleteARLineInfo</a></div></div><div class="inline-doc" id="iarmanager_deletearlineinfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>deleteARLineInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">deleteARLineInfo</span><span class="params">(<span class="meta">@NonNull</span> ARLineInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallback callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-11">描述：</h5>
+<p><font color="#666">删除AR线信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-10">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARLineInfo.html#iarmanager_arlineinfo">ARLineInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR线信息，各端点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_queryarpolygoninfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_queryarpolygoninfo_inline">queryARPolygonInfo</a></div></div><div class="inline-doc" id="iarmanager_queryarpolygoninfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>queryARPolygonInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">queryARPolygonInfo</span><span class="params">(<span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;List&lt;ARPolygonInfo&gt;&gt; callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-12">描述：</h5>
+<p><font color="#666">查询AR面信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-11">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;List&lt;<a href="../../Components/IARManager/IARManager_ARPolygonInfo.html#iarmanager_arpolygoninfo">ARPolygonInfo</a>&gt;&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口，返回的AR面各端点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米；extrusionAnchor 为拉伸相对偏移向量（经度/纬度/高度分量分别为东西、南北、垂直方向的相对拉伸量，单位米），非绝对坐标。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_uploadarpolygoninfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_uploadarpolygoninfo_inline">uploadARPolygonInfo</a></div></div><div class="inline-doc" id="iarmanager_uploadarpolygoninfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>uploadARPolygonInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">uploadARPolygonInfo</span><span class="params">(<span class="meta">@NonNull</span> ARPolygonInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;String&gt; callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-13">描述：</h5>
+<p><font color="#666">上传AR面信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-12">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPolygonInfo.html#iarmanager_arpolygoninfo">ARPolygonInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR面信息，各端点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米；extrusionAnchor 为拉伸相对偏移向量（经度/纬度/高度分量分别为东西、南北、垂直方向的相对拉伸量，单位米），非绝对坐标。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;String&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_updatearpolygoninfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_updatearpolygoninfo_inline">updateARPolygonInfo</a></div></div><div class="inline-doc" id="iarmanager_updatearpolygoninfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>updateARPolygonInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">updateARPolygonInfo</span><span class="params">(<span class="meta">@NonNull</span> ARPolygonInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallback callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-14">描述：</h5>
+<p><font color="#666">更新AR面信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-13">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPolygonInfo.html#iarmanager_arpolygoninfo">ARPolygonInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR面信息，各端点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米；extrusionAnchor 为拉伸相对偏移向量（经度/纬度/高度分量分别为东西、南北、垂直方向的相对拉伸量，单位米），非绝对坐标。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_deletearpolygoninfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_deletearpolygoninfo_inline">deleteARPolygonInfo</a></div></div><div class="inline-doc" id="iarmanager_deletearpolygoninfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>deleteARPolygonInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">deleteARPolygonInfo</span><span class="params">(<span class="meta">@NonNull</span> ARPolygonInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallback callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-15">描述：</h5>
+<p><font color="#666">删除AR面信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-14">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARPolygonInfo.html#iarmanager_arpolygoninfo">ARPolygonInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR面信息，各端点高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米；extrusionAnchor 为拉伸相对偏移向量（经度/纬度/高度分量分别为东西、南北、垂直方向的相对拉伸量，单位米），非绝对坐标。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_queryarcircleinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_queryarcircleinfo_inline">queryARCircleInfo</a></div></div><div class="inline-doc" id="iarmanager_queryarcircleinfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>queryARCircleInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">queryARCircleInfo</span><span class="params">(<span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;List&lt;ARCircleInfo&gt;&gt; callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-16">描述：</h5>
+<p><font color="#666">查询AR圆信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-15">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;List&lt;<a href="../../Components/IARManager/IARManager_ARCircleInfo.html#iarmanager_arcircleinfo">ARCircleInfo</a>&gt;&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口，返回的AR圆圆心（center）高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米；extrusionAnchor 为拉伸相对偏移向量（经度/纬度/高度分量分别为东西、南北、垂直方向的相对拉伸量，单位米），非绝对坐标。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_uploadarcircleinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_uploadarcircleinfo_inline">uploadARCircleInfo</a></div></div><div class="inline-doc" id="iarmanager_uploadarcircleinfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>uploadARCircleInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">uploadARCircleInfo</span><span class="params">(<span class="meta">@NonNull</span> ARCircleInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallbackWithParam&lt;String&gt; callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-17">描述：</h5>
+<p><font color="#666">上传AR圆信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-16">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARCircleInfo.html#iarmanager_arcircleinfo">ARCircleInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR圆信息，圆心（center）高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米；extrusionAnchor 为拉伸相对偏移向量（经度/纬度/高度分量分别为东西、南北、垂直方向的相对拉伸量，单位米），非绝对坐标。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.CompletionCallbackWithParam&lt;String&gt; <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_updatearcircleinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_updatearcircleinfo_inline">updateARCircleInfo</a></div></div><div class="inline-doc" id="iarmanager_updatearcircleinfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>updateARCircleInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">updateARCircleInfo</span><span class="params">(<span class="meta">@NonNull</span> ARCircleInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallback callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-18">描述：</h5>
+<p><font color="#666">更新AR圆信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-17">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARCircleInfo.html#iarmanager_arcircleinfo">ARCircleInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR圆信息，圆心（center）高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米；extrusionAnchor 为拉伸相对偏移向量（经度/纬度/高度分量分别为东西、南北、垂直方向的相对拉伸量，单位米），非绝对坐标。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_deletearcircleinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_deletearcircleinfo_inline">deleteARCircleInfo</a></div></div><div class="inline-doc" id="iarmanager_deletearcircleinfo_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>deleteARCircleInfo</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">deleteARCircleInfo</span><span class="params">(<span class="meta">@NonNull</span> ARCircleInfo info, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallback callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-19">描述：</h5>
+<p><font color="#666">删除AR圆信息。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-18">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARCircleInfo.html#iarmanager_arcircleinfo">ARCircleInfo</a> <font color="#000">info</td><td><font color="#666"><i>AR圆信息，圆心（center）高度为绝对椭球高（HAE，相对 WGS-84 椭球面的高度），单位米；extrusionAnchor 为拉伸相对偏移向量（经度/纬度/高度分量分别为东西、南北、垂直方向的相对拉伸量，单位米），非绝对坐标。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>回调接口。</i></td></tr></table></html></div>
+<div class="api-row" id="iarmanager_enablearradar"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">method</div><div class="api-col right"><a class="trigger" href="#iarmanager_enablearradar_inline">enableARRadar</a></div></div><div class="inline-doc" id="iarmanager_enablearradar_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">method </font>enableARRadar</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">enableARRadar</span><span class="params">(<span class="meta">@NonNull</span> ARRadarConfig config, <span class="meta">@NonNull</span> CommonCallbacks.CompletionCallback callback)</span></span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.client.interfaces</td></tr></table></html>
+<h5 id="描述：-20">描述：</h5>
+<p><font color="#666">设置AR雷达扫描范围配置。当 config.enable 为 false 时关闭雷达扫描范围显示；为 true 时按参数显示。 注意：全局只有一个雷达扫描范围配置生效，多次调用以最后一次为准。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="输入参数：-19">输入参数：</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/IARManager/IARManager_ARRadarConfig.html#iarmanager_arradarconfig">ARRadarConfig</a> <font color="#000">config</td><td><font color="#666"><i>雷达扫描范围配置。</i></td></tr><tr valign="top"><td><font color="#70BF41">@NonNull <a href="../../Components/DJICommonCallbacks/DJICommonCallbacks.html#djicommoncallbacks">CommonCallbacks</a>.<a href="../../Components/DJICommonCallbacks/DJICommonCallbacks_CompletionCallback.html#djicommoncallbacks_completioncallback">CompletionCallback</a> <font color="#000">callback</td><td><font color="#666"><i>操作结果回调。</i></td></tr></table></html></div>
+<h5 id="Related">Related:</h5>
+<div class="api-row" id="iarmanager_arcircleinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARCircleInfo.html">ARCircleInfo</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_arcircleinfo_inline" data-class-href="../../Components/IARManager/IARManager_ARCircleInfo.html" data-class-name="ARCircleInfo"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARCircleInfo <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARCircleInfo</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR圆信息实体。支持圆柱体/圆台拉伸。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_ardistalpha"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARDistAlpha.html">ARDistAlpha</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_ardistalpha_inline" data-class-href="../../Components/IARManager/IARManager_ARDistAlpha.html" data-class-name="ARDistAlpha"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARDistAlpha <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARDistAlpha</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR面/边线透明度随距离变化配置。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_ardistlinewidth"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARDistLineWidth.html">ARDistLineWidth</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_ardistlinewidth_inline" data-class-href="../../Components/IARManager/IARManager_ARDistLineWidth.html" data-class-name="ARDistLineWidth"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARDistLineWidth <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARDistLineWidth</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR线段宽度随距离变化配置。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_arfacestroke"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARFaceStroke.html">ARFaceStroke</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_arfacestroke_inline" data-class-href="../../Components/IARManager/IARManager_ARFaceStroke.html" data-class-name="ARFaceStroke"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARFaceStroke <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARFaceStroke</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR面边线配置（显隐 + 线段属性）。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_arfontgravity"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">enum</div><div class="api-col right"><a class="trigger" href="#iarmanager_arfontgravity_inline">ARFontGravity</a></div></div><div class="inline-doc" id="iarmanager_arfontgravity_inline"
 <blockquote>
 <div class="article"><h6 ><font color="#AAA">enum </font>ARFontGravity</h6></div>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">enum</span> <span class="title class_">ARFontGravity</span> </span><br></pre></td></tr></table></figure>
 <html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.base.manager.ar</td></tr></table></html>
-<h5 id="描述：-9">描述：</h5>
-<p><font color="#666">文本的对齐方式。 <br><br><code><i>MSDK 6.0.0开始支持</i></code></p>
-<h5 id="Enum-Members-2">Enum Members:</h5>
+<h5 id="描述：-21">描述：</h5>
+<p><font color="#666">文本的对齐方式。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="Enum-Members">Enum Members:</h5>
 <html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_arfontgravity_left_inline"></a>LEFT</td><td><font color="#666">左对齐。</td></tr><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_arfontgravity_top_inline"></a>TOP</td><td><font color="#666">上对齐。</td></tr><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_arfontgravity_right_inline"></a>RIGHT</td><td><font color="#666">右对齐。</td></tr><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_arfontgravity_bottom_inline"></a>BOTTOM</td><td><font color="#666">下对齐。</td></tr></table></html>
+<h5 id="Class-Members">Class Members:</h5>
+</div>
+<div class="api-row" id="iarmanager_ariconorthographicconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARIconOrthographicConfig.html">ARIconOrthographicConfig</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_ariconorthographicconfig_inline" data-class-href="../../Components/IARManager/IARManager_ARIconOrthographicConfig.html" data-class-name="ARIconOrthographicConfig"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARIconOrthographicConfig <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARIconOrthographicConfig</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR图标正交投影配置。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_ariconperspectiveconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARIconPerspectiveConfig.html">ARIconPerspectiveConfig</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_ariconperspectiveconfig_inline" data-class-href="../../Components/IARManager/IARManager_ARIconPerspectiveConfig.html" data-class-name="ARIconPerspectiveConfig"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARIconPerspectiveConfig <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARIconPerspectiveConfig</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR图标透视投影配置。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_ariconprojectiontype"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">enum</div><div class="api-col right"><a class="trigger" href="#iarmanager_ariconprojectiontype_inline">ARIconProjectionType</a></div></div><div class="inline-doc" id="iarmanager_ariconprojectiontype_inline"
+<blockquote>
+<div class="article"><h6 ><font color="#AAA">enum </font>ARIconProjectionType</h6></div>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">enum</span> <span class="title class_">ARIconProjectionType</span> </span><br></pre></td></tr></table></figure>
+<html><table class="table-supportedby"><tr valign="top"><td width=15%><font color="#999"><i>包：</i></td><td width=85%><font color="#999">dji.open.pilot.base.manager.ar</td></tr></table></html>
+<h5 id="描述：-22">描述：</h5>
+<p><font color="#666">AR 投影类型枚举 用于表示 AR 中渲染元素所采用的投影方式。 <br><br><code><i>MSDK 5.20.1开始支持</i></code></p>
+<h5 id="Enum-Members-2">Enum Members:</h5>
+<html><table class="table-inline-parameters"><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_ariconprojectiontype_none_inline"></a>NONE</td><td><font color="#666">无投影，不显示图标。</td></tr><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_ariconprojectiontype_perspective_inline"></a>PERSPECTIVE</td><td><font color="#666">透视投影，近大远小，符合人眼视觉习惯。</td></tr><tr valign="top"><td><font color="#70BF41"><a href="#iarmanager_ariconprojectiontype_orthographic_inline"></a>ORTHOGRAPHIC</td><td><font color="#666">正交投影，大小与距离无关，保持固定像素尺寸。</td></tr></table></html>
 <h5 id="Class-Members-2">Class Members:</h5>
 </div>
-<div class="api-row" id="iarmanager_ariconperspectiveconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARIconPerspectiveConfig.html">ARIconPerspectiveConfig</a></div></div><div class="api-row" id="iarmanager_ariconorthographicconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARIconOrthographicConfig.html">ARIconOrthographicConfig</a></div></div>
+<div class="api-row" id="iarmanager_arlineinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARLineInfo.html">ARLineInfo</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_arlineinfo_inline" data-class-href="../../Components/IARManager/IARManager_ARLineInfo.html" data-class-name="ARLineInfo"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARLineInfo <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARLineInfo</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR线信息实体。线段各端点支持嵌入 AR 点（图标+文字）。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_arpointconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARPointConfig.html">ARPointConfig</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_arpointconfig_inline" data-class-href="../../Components/IARManager/IARManager_ARPointConfig.html" data-class-name="ARPointConfig"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARPointConfig <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARPointConfig</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR点配置信息。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_arpointinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARPointInfo.html">ARPointInfo</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_arpointinfo_inline" data-class-href="../../Components/IARManager/IARManager_ARPointInfo.html" data-class-name="ARPointInfo"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARPointInfo <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARPointInfo</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR点信息实体。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_arpolygonface"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARPolygonFace.html">ARPolygonFace</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_arpolygonface_inline" data-class-href="../../Components/IARManager/IARManager_ARPolygonFace.html" data-class-name="ARPolygonFace"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARPolygonFace <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARPolygonFace</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR面（顶面/侧面/底面）颜色与显隐配置。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_arpolygoninfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARPolygonInfo.html">ARPolygonInfo</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_arpolygoninfo_inline" data-class-href="../../Components/IARManager/IARManager_ARPolygonInfo.html" data-class-name="ARPolygonInfo"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARPolygonInfo <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARPolygonInfo</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR多边形面信息实体。支持柱体拉伸，各端点支持嵌入 AR 点。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_arradarconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARRadarConfig.html">ARRadarConfig</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_arradarconfig_inline" data-class-href="../../Components/IARManager/IARManager_ARRadarConfig.html" data-class-name="ARRadarConfig"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARRadarConfig <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARRadarConfig</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR雷达扫描范围配置。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_arstrokeinfo"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARStrokeInfo.html">ARStrokeInfo</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_arstrokeinfo_inline" data-class-href="../../Components/IARManager/IARManager_ARStrokeInfo.html" data-class-name="ARStrokeInfo"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARStrokeInfo <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARStrokeInfo</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">AR线段属性配置。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div><div class="api-row" id="iarmanager_artextconfig"><div class="api-col left"></div><div class="api-col middle" style="color:#AAA">class</div><div class="api-col right"><a href="../../Components/IARManager/IARManager_ARTextConfig.html">ARTextConfig</a></div></div><div class="inline-doc class-inline-doc offline-class-inline-doc" id="iarmanager_artextconfig_inline" data-class-href="../../Components/IARManager/IARManager_ARTextConfig.html" data-class-name="ARTextConfig"><blockquote><div class="article"><h6><font color="#AAA">class </font>ARTextConfig <span class="class-jump-arrow">↗</span></h6></div></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">ARTextConfig</span> implements <span class="title class_">Parcelable</span></span></pre></td></tr></table></figure><h5>描述</h5><p><font color="#666">ARText配置。</font></p><p><code><i>MSDK 5.20.1开始支持</i></code></p></div>
 
+        </div>
+      </div>
+      <div class="site-toc">
+        <div class="site-toc-inner">
+          <div class="site-toc-title">本页目录</div>
+          <ul class="site-toc-list"></ul>
         </div>
       </div>
     </div>
